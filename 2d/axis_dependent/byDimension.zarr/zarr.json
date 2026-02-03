@@ -43,41 +43,49 @@
           ],
           "datasets": [
             {
-              "path": "array",
+              "path": "s0",
               "coordinateTransformations": [
                 {
-                  "type": "byDimension",
-                  "output": "physical",
-                  "input": "array",
-                  "transformations": [
-                    {
-                      "type": "scale",
-                      "output_axes": [
-                        "x"
-                      ],
-                      "input_axes": [
-                        "dim_1"
-                      ],
-                      "scale": [
-                        2
-                      ]
-                    },
-                    {
-                      "type": "translation",
-                      "output_axes": [
-                        "y"
-                      ],
-                      "input_axes": [
-                        "dim_0"
-                      ],
-                      "translation": [
-                        -10
-                      ]
-                    }
-                  ],
+                  "type": "identity",
+                  "output": "array_coordinates",
+                  "input": "s0",
                   "name": "transform-name"
                 }
               ]
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "type": "byDimension",
+              "output": "physical",
+              "input": "array_coordinates",
+              "transformations": [
+                {
+                  "type": "scale",
+                  "output_axes": [
+                    "x"
+                  ],
+                  "input_axes": [
+                    "dim_1"
+                  ],
+                  "scale": [
+                    2
+                  ]
+                },
+                {
+                  "type": "translation",
+                  "output_axes": [
+                    "y"
+                  ],
+                  "input_axes": [
+                    "dim_0"
+                  ],
+                  "translation": [
+                    -10
+                  ]
+                }
+              ],
+              "name": "transform-name"
             }
           ]
         }
