@@ -62,27 +62,15 @@
               "transformations": [
                 {
                   "type": "scale",
-                  "output_axes": [
-                    "x"
-                  ],
-                  "input_axes": [
-                    "dim_1"
-                  ],
-                  "scale": [
-                    2
-                  ]
+                  "output_axes": [1],
+                  "input_axes": [1],
+                  "scale": [2]
                 },
                 {
                   "type": "translation",
-                  "output_axes": [
-                    "y"
-                  ],
-                  "input_axes": [
-                    "dim_0"
-                  ],
-                  "translation": [
-                    -10
-                  ]
+                  "output_axes": [0],
+                  "input_axes": [0],
+                  "translation": [-10]
                 }
               ],
               "name": "transform-name"
