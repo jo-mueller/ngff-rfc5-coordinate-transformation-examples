@@ -41,6 +41,14 @@
                         3,
                         2
                       ]
+                    },
+                    {
+                      "type": "translation",
+                      "translation": [
+                        0,
+                        0
+                      ],
+                      "name": ""
                     }
                   ],
                   "name": "transform-name"
