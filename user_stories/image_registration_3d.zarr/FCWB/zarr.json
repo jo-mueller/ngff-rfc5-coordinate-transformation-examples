@@ -9,7 +9,7 @@
           "name": "multiscales",
           "coordinateSystems": [
             {
-              "name": "FCWB",
+              "name": "physical",
               "axes": [
                 {
                   "type": "space",

@@ -8,8 +8,8 @@
         "coordinateTransformations": [
           {
             "type": "bijection",
-            "input": {"path": "JRC2018F", "name": "JRC2018F"},
-            "output": "FCWB",
+            "input": {"path": "JRC2018F", "name": "physical"},
+            "output": {"path": "FCWB", "name": "physical"},
             "forward": {
               "type": "sequence",
               "name": "JRC2018F to FCWB",
