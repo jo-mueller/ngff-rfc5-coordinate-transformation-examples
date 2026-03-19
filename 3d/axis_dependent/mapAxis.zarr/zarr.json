@@ -42,7 +42,6 @@
                   "input": "0"
                 }
               ]
-
             }
           ],
           "coordinateTransformations": [
@@ -82,16 +81,14 @@
         }
       ],
       "coordinateTransformations": [
-            {
-              "type": "mapAxis",
-              "output": "transposed",
-              "input": "physical",
-              "name": "transform-name",
-              "mapAxis": [2, 1, 0]
-            }
-          ]
+        {
+          "type": "mapAxis",
+          "output": "transposed",
+          "input": "physical",
+          "name": "transform-name",
+          "mapAxis": [2, 1, 0]
         }
       ]
-  }
+    }
   }
 }
