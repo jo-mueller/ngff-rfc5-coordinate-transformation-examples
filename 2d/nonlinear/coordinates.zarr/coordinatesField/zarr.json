@@ -71,7 +71,6 @@
         {
           "type": "scale",
           "output": {"name": "0"},
-          "input": {"path": "0"},
           "scale": [
             1,
             1,

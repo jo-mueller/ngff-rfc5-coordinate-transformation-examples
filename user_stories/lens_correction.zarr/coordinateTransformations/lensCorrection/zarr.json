@@ -68,7 +68,6 @@
         {
           "type": "scale",
           "output": {"name": "raw2d"},
-          "input": {"path": "."},
           "name": "displacement field sample spacing",
           "scale": [
             5,
