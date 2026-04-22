@@ -38,7 +38,7 @@
               "coordinateTransformations": [
                 {
                   "type": "scale",
-                  "output": {"name": "FCWB"},
+                  "output": {"name": "physical"},
                   "input": {"path": "s0"},
                   "scale": [
                     1.2,
@@ -53,7 +53,7 @@
               "coordinateTransformations": [
                 {
                   "type": "sequence",
-                  "output": {"name": "FCWB"},
+                  "output": {"name": "physical"},
                   "input": {"path": "s1"},
                   "transformations": [
                     {
