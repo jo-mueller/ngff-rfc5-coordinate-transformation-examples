@@ -35,17 +35,17 @@
               "name": "physical",
               "axes": [
                 {
-                  "type": "array",
+                  "type": "space",
                   "name": "z",
                   "discrete": false
                 },
                 {
-                  "type": "array",
+                  "type": "space",
                   "name": "y",
                   "discrete": false
                 },
                 {
-                  "type": "array",
+                  "type": "space",
                   "name": "x",
                   "discrete": false
                 }
