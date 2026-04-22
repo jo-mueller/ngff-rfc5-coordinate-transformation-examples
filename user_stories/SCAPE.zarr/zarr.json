@@ -8,7 +8,7 @@
         "coordinateTransformations": [
           {
             "type": "translation",
-            "output": "world",
+            "output": {"name": "world"},
             "input": {"path": "stack", "name": "unskewed"},
             "translation": [
               5882.2,
