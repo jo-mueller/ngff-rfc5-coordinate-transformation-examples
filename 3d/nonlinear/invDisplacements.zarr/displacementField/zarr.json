@@ -79,7 +79,6 @@
         {
           "type": "scale",
           "output": {"name": "0"},
-          "input": {"name": "0"},
           "scale": [
             1,
             1,
