@@ -35,17 +35,17 @@
               "name": "array",
               "axes": [
                 {
-                  "type": "array",
+                  "type": "space",
                   "name": "dim_0",
                   "discrete": true
                 },
                 {
-                  "type": "array",
+                  "type": "space",
                   "name": "dim_1",
                   "discrete": true
                 },
                 {
-                  "type": "array",
+                  "type": "space",
                   "name": "dim_2",
                   "discrete": true
                 }
@@ -72,31 +72,20 @@
               "input": {"name": "array"},
               "transformations": [
                 {
-                  "type": "scale",
-                  "output_axes": [
-                    "x",
-                    "y"
-                  ],
-                  "input_axes": [
-                    "dim_0",
-                    "dim_1"
-                  ],
-                  "scale": [
-                    3,
-                    2
-                  ]
+                  "transformation": {
+                    "type": "scale",
+                    "scale": [3, 2]
+                  },
+                  "output_axes": [2, 1],
+                  "input_axes": [0, 1]
                 },
                 {
-                  "type": "translation",
-                  "output_axes": [
-                    "z"
-                  ],
-                  "input_axes": [
-                    "dim_2"
-                  ],
-                  "translation": [
-                    10
-                  ]
+                  "transformation": {
+                    "type": "translation",
+                    "translation": [10]
+                  },
+                  "output_axes": [0],
+                  "input_axes": [2]
                 }
               ],
               "name": "transform-name"
