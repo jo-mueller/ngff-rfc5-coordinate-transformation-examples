@@ -32,22 +32,25 @@
               ]
             },
             {
-              "name": "array",
+              "name": "y-scaled",
               "axes": [
                 {
                   "type": "space",
-                  "name": "dim_0",
-                  "discrete": true
+                  "name": "z",
+                  "unit": "micrometer",
+                  "discrete": false
                 },
                 {
                   "type": "space",
-                  "name": "dim_1",
-                  "discrete": true
+                  "name": "y",
+                  "unit": "nanometer",
+                  "discrete": false
                 },
                 {
                   "type": "space",
-                  "name": "dim_2",
-                  "discrete": true
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
                 }
               ]
             }
@@ -58,34 +61,26 @@
               "coordinateTransformations": [
                 {
                   "type": "identity",
+                  "output": {"name": "physical"},
                   "input": {"path": "0"},
-                  "output": {"name": "array"}
+                  "name": "transform-name"
                 }
               ]
-
             }
           ],
           "coordinateTransformations": [
             {
               "type": "byDimension",
-              "output": {"name": "physical"},
-              "input": {"name": "array"},
+              "output": {"name": "y-scaled"},
+              "input": {"name": "physical"},
               "transformations": [
                 {
                   "transformation": {
                     "type": "scale",
-                    "scale": [3, 2]
+                    "scale": [1000]
                   },
-                  "output_axes": [2, 1],
-                  "input_axes": [0, 1]
-                },
-                {
-                  "transformation": {
-                    "type": "translation",
-                    "translation": [10]
-                  },
-                  "output_axes": [0],
-                  "input_axes": [2]
+                  "output_axes": [1],
+                  "input_axes": [1]
                 }
               ],
               "name": "transform-name"

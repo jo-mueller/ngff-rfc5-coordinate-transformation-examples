@@ -26,17 +26,19 @@
               ]
             },
             {
-              "name": "array_coordinates",
+              "name": "y-scaled",
               "axes": [
                 {
-                  "type": "array",
-                  "name": "dim_0",
-                  "discrete": true
+                  "type": "space",
+                  "name": "y",
+                  "unit": "nanometer",
+                  "discrete": false
                 },
                 {
-                  "type": "array",
-                  "name": "dim_1",
-                  "discrete": true
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
                 }
               ]
             }
@@ -47,7 +49,7 @@
               "coordinateTransformations": [
                 {
                   "type": "identity",
-                  "output": {"name": "array_coordinates"},
+                  "output": {"name": "physical"},
                   "input": {"path": "s0"},
                   "name": "transform-name"
                 }
@@ -57,24 +59,16 @@
           "coordinateTransformations": [
             {
               "type": "byDimension",
-              "output": {"name": "physical"},
-              "input": {"name": "array_coordinates"},
+              "output": {"name": "y-scaled"},
+              "input": {"name": "physical"},
               "transformations": [
                 {
                   "transformation": {
                     "type": "scale",
-                    "scale": [2]
+                    "scale": [1000]
                   },
                   "output_axes": [1],
                   "input_axes": [1]
-                },
-                {
-                  "transformation": {
-                    "type": "translation",
-                    "translation": [-10]
-                  },
-                  "output_axes": [0],
-                  "input_axes": [0]
                 }
               ],
               "name": "transform-name"
