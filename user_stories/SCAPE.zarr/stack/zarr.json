@@ -1,7 +1,7 @@
 {
 	"attributes": {
 		"ome": {
-			"version": "0.6.dev4",
+			"version": "0.6",
 			"multiscales": [
 				{
 					"coordinateSystems": [
