@@ -67,8 +67,8 @@
                     "type": "scale",
                     "scale": [1000]
                   },
-                  "output_axes": [1],
-                  "input_axes": [1]
+                  "outputAxes": [1],
+                  "inputAxes": [1]
                 }
               ],
               "name": "transform-name"
